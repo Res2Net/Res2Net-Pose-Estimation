@@ -9,18 +9,19 @@ More detail can be found on [ "Res2Net: A New Multi-scale Backbone Architecture"
 
 ## Performance
 
-### Results on COCO val2017 with detector having human AP of 56.4 on COCO val2017 dataset
-| Arch                   | Input size   |   AP  | Ap .5 | AP .75 | AP (M) | AP (L) |
-|--------------------    |--------------|-------|-------|--------|--------|--------|
-| pose_resnet_50         |    256x192   | 0.704 | 0.886 |  0.783 |  0.671 |  0.772 |
-| **pose_res2net_50**    |    256x192   | 0.737 | 0.925 |  0.814 |  0.708 |  0.782 |
-| pose_resnet_101        |    256x192   | 0.714 | 0.893 |  0.793 |  0.681 |  0.781 |
-| **pose_res2net_101**   |    256x192   | 0.744 | 0.926 |  0.826 |  0.720 |  0.785 |
+### Results on COCO val2017
+| Arch                          | Input size   |   AP  | Ap .5 | AP .75 | AP (M) | AP (L) |
+|--------------------           |--------------|-------|-------|--------|--------|--------|
+| pose_resnet_50                |    256x192   | 0.704 | 0.886 |  0.783 |  0.671 |  0.772 |
+| pose_resnet_50-gtbox          |    256x192   | 0.724 | 0.915 | 0.804  | 0.697  | 0.765  | 
+| **pose_res2net_50**-gtbox     |    256x192   | 0.737 | 0.925 |  0.814 |  0.708 |  0.782 |
+| pose_resnet_101               |    256x192   | 0.714 | 0.893 |  0.793 |  0.681 |  0.781 |
+| **pose_res2net_101**-gtbox    |    256x192   | 0.744 | 0.926 |  0.826 |  0.720 |  0.785 |
 
 
 ### Note:
 - Flip test is used.
-- Person detector has person AP of 56.4 on COCO val2017 dataset.
+- Person detector has person AP of 56.4 on COCO val2017 dataset will be released soon.
 
 ## Quick start
 ### Installation
