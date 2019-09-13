@@ -10,18 +10,20 @@ More detail can be found on [ "Res2Net: A New Multi-scale Backbone Architecture"
 ## Performance
 
 ### Results on COCO val2017
-| Arch                          | Input size   |   AP  | Ap .5 | AP .75 | AP (M) | AP (L) |
-|--------------------           |--------------|-------|-------|--------|--------|--------|
-| pose_resnet_50                |    256x192   | 0.704 | 0.886 |  0.783 |  0.671 |  0.772 |
-| pose_resnet_50-gtbox          |    256x192   | 0.724 | 0.915 | 0.804  | 0.697  | 0.765  | 
-| **pose_res2net_50**-gtbox     |    256x192   | 0.737 | 0.925 |  0.814 |  0.708 |  0.782 |
-| pose_resnet_101               |    256x192   | 0.714 | 0.893 |  0.793 |  0.681 |  0.781 |
-| **pose_res2net_101**-gtbox    |    256x192   | 0.744 | 0.926 |  0.826 |  0.720 |  0.785 |
+| Arch                      |Person detector | Input size   |   AP  | Ap .5 | AP .75 | AP (M) | AP (L) |
+|---------------------------|----------------|--------------|-------|-------|--------|--------|--------|
+| pose_resnet_50            | prdbox         |    256x192   | 0.704 | 0.886 |  0.783 |  0.671 |  0.772 |
+| **pose_res2net_50**       | prdbox         |    256x192   | 0.715 | 0.890 |  0.793 |  0.682 |  0.784 |
+| pose_resnet_50            | GTbox          |    256x192   | 0.724 | 0.915 |  0.804 |  0.697 |  0.765 | 
+| **pose_res2net_50**       | GTbox          |    256x192   | 0.737 | 0.925 |  0.814 |  0.708 |  0.782 |
+| pose_resnet_101           | prdbox         |    256x192   | 0.714 | 0.893 |  0.793 |  0.681 |  0.781 |
+| **pose_res2net_101**      | prdbox         |    256x192   | 0.722 | 0.894 |  0.798 |  0.689 |  0.792 |
+| **pose_res2net_101**      | GTbox          |    256x192   | 0.744 | 0.926 |  0.826 |  0.720 |  0.785 |
 
 
 ### Note:
 - Flip test is used.
-- Person detector has person AP of 56.4 on COCO val2017 dataset will be released soon.
+- Person detector: prdbox refers to the Person detector that has person AP of 56.4 on COCO val2017 dataset; GTbox refers to the GT of person detection.
 
 ## Quick start
 ### Installation
@@ -171,7 +173,7 @@ python tools/train.py \
 ```
 
 ### Applications
-Other applications such as Classification, Instance segmentation, Object detection, Segmantic segmentation, Salient object detection, Class activation map can be found on https://mmcheng.net/res2net/ and https://github.com/gasvn/Res2Net .
+Other applications such as Classification, Instance segmentation, Object detection, Semantic segmentation, Salient object detection, Class activation map can be found on https://mmcheng.net/res2net/ and https://github.com/gasvn/Res2Net .
 
 ### Citation
 If you find this work or code is helpful in your research, please cite:
