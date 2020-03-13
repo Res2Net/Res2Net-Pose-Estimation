@@ -14,3 +14,4 @@ from __future__ import print_function
 
 import models.pose_resnet
 import models.pose_res2net
+import models.pose_res2net_v1b

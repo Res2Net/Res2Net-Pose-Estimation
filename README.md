@@ -1,5 +1,7 @@
 # Res2Net for Pose Estimation
 
+## Update
+- [2020.3.13] Res2Net_v1b based Pose Estimation results are released now.
 
 ## Introduction
 This repo uses [*Simple Baselines*](http://openaccess.thecvf.com/content_ECCV_2018/html/Bin_Xiao_Simple_Baselines_for_ECCV_2018_paper.html) as the baseline method for Pose Estimation. 
@@ -13,12 +15,16 @@ More detail can be found on [ "Res2Net: A New Multi-scale Backbone Architecture"
 | Arch                      |Person detector | Input size   |   AP  | Ap .5 | AP .75 | AP (M) | AP (L) |
 |---------------------------|----------------|--------------|-------|-------|--------|--------|--------|
 | pose_resnet_50            | prdbox         |    256x192   | 0.704 | 0.886 |  0.783 |  0.671 |  0.772 |
-| **pose_res2net_50**       | prdbox         |    256x192   | 0.715 | 0.890 |  0.793 |  0.682 |  0.784 |
+| pose_res2net_50           | prdbox         |    256x192   | 0.715 | 0.890 |  0.793 |  0.682 |  0.784 |
 | pose_resnet_50            | GTbox          |    256x192   | 0.724 | 0.915 |  0.804 |  0.697 |  0.765 | 
-| **pose_res2net_50**       | GTbox          |    256x192   | 0.737 | 0.925 |  0.814 |  0.708 |  0.782 |
+| pose_res2net_50           | GTbox          |    256x192   | 0.737 | 0.925 |  0.814 |  0.708 |  0.782 |
 | pose_resnet_101           | prdbox         |    256x192   | 0.714 | 0.893 |  0.793 |  0.681 |  0.781 |
-| **pose_res2net_101**      | prdbox         |    256x192   | 0.722 | 0.894 |  0.798 |  0.689 |  0.792 |
-| **pose_res2net_101**      | GTbox          |    256x192   | 0.744 | 0.926 |  0.826 |  0.720 |  0.785 |
+| pose_res2net_101          | prdbox         |    256x192   | 0.722 | 0.894 |  0.798 |  0.689 |  0.792 |
+| pose_res2net_101          | GTbox          |    256x192   | 0.744 | 0.926 |  0.826 |  0.720 |  0.785 |
+| **pose_res2net_v1b_50**   | prdbox         |    256x192   | 0.722 | 0.895 |  0.797 |  0.685 |  0.794 |
+| **pose_res2net_v1b_50**   | GTbox          |    256x192   | 0.743 | 0.926 |  0.816 |  0.713 |  0.792 |
+| **pose_res2net_101**      | prdbox         |    256x192   | 0.730 | 0.895 |  0.803 |  0.695 |  0.800 |
+| **pose_res2net_101**      | GTbox          |    256x192   | 0.753 | 0.926 |  0.825 |  0.722 |  0.801 |
 
 
 ### Note:
